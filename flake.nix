@@ -21,6 +21,16 @@
               '';
             });
           };
+          with-foot = {
+            type = "app";
+            program = lib.getExe (pkgs.writeShellApplication {
+              name = "run-presentation-foot";
+              runtimeInputs = [ pkgs.presenterm pkgs.foot ];
+              text = ''
+                foot presenterm -c ${./.}/presenterm.yaml ${./.}/presentation.md
+              '';
+            });
+          };
           html = {
             type = "app";
             program = lib.getExe (pkgs.writeShellApplication {
