@@ -1,0 +1,5 @@
+transition:
+  duration_millis: 3000
+  frames: 60
+  animation:
+    style: slide_horizontal

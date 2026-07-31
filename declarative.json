@@ -1,0 +1,8 @@
+{
+"option_1" : 10,
+"option_2" : 200,
+"option_3" : "on",
+"option_4" : False,
+"option_5" : [1,2,3],
+"option_6" : 10000
+}
