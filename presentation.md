@@ -342,6 +342,15 @@ That's the power of composability, reproducibility Nix brought to the table. The
 
 ---
 
+Basically u do this wizadry:
+===
+
+Create a main.py with python
+Package it for python and create a shell(enviroment)
+Use the exact same package in a container
+deploy the container as a service in a container orchestrator running in NixoS all with a single command with same language and with all the benefits of Nix I mentioned above
+---
+
 Some nix ecosystem projects:
 ===
 
