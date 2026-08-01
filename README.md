@@ -16,8 +16,8 @@ Works on NixOS, macOS, Linux and WSL. No need to install anything. Just run :-)
 You can view this presentation with a single command without needing to clone the repository or manually install any dependencies. Just run:
 
 ```bash
-# Directly from Codeberg
-nix run
+# Directly from GitHub
+nix run github:vivekanandan-ks/cf-x-dto-aug1-2026
 
 # Or if cloned locally
 nix run .
@@ -34,8 +34,9 @@ You can easily generate a PDF or a self-contained HTML file of this presentation
 
 To generate an HTML file (`presentation.html`):
 ```bash
-# Directly from Codeberg
-nix run git+https://codeberg.org/vivekanandanks/ksv-artifacts.git?dir=TossConf26/nix-shells-workshop#html
+# Directly from GitHub
+nix run github:vivekanandan-ks/cf-x-dto-aug1-2026#html
+
 
 # Or if cloned locally
 nix run .#html
@@ -44,7 +45,8 @@ nix run .#html
 To generate a PDF document (`presentation.pdf`):
 ```bash
 # Directly from Codeberg
-nix run git+https://codeberg.org/vivekanandanks/ksv-artifacts.git?dir=TossConf26/nix-shells-workshop#pdf
+nix run github:vivekanandan-ks/cf-x-dto-aug1-2026#pdf
+
 
 # Or if cloned locally
 nix run .#pdf
