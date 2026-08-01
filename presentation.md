@@ -235,6 +235,24 @@ some_operation (
 
 ```
 
+---
+
+Just to show how equivalent nix language looks like:
+===
+
+```nix
+someFunction {
+    option_1 = 10;
+    option_2 = 200;
+    option_3 = "on";
+    option_4 = False;
+    option_5 = [1 2 3];
+    option_6 = 10000;
+}
+```
+
+---
+
 How Nix does these:
 ===
 
@@ -265,17 +283,19 @@ This build system is what fundamentally distinguishes Nix from any other thing.
 ---
 
 <!-- incremental_lists: true -->
+  Q)If there's no internet connection how do we download dependencies which some projects might need?
 
-Q)If there's no internet connection how do we download dependencies which some projects might need?
-
-A)
-By giving the dependencies as inputs along with their hashes to the build
+- A)
+- By giving the dependencies as inputs along with their hashes to the build
 
 ---
 
 This paradigm makes Nix a "Congruent" model.
 
 ![image:width:80%](different_systems.png)
+
+image source: From drupol's thesis
+https://doi.org/10.5281/zenodo.18701980
 
 Nix : Congruent: Correctness by construction, not by mutation
 ===
